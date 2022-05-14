@@ -4,10 +4,7 @@
 :: Michael Martins - 2022 
 :: ---------  Changelog  ---------
 :: -
-:: > 18/07/2021 - Inicio / Criação
-
-:: Execution
-:: for /F %%i in (IP.txt) do start EXECUTAR.cmd %%i & sleep 2
+::  13/05/2022 - Inicio / Criação
 
 setlocal enabledelayedexpansion
 for /F %%i in (IP_LIST.txt) do (
@@ -27,20 +24,6 @@ for /F %%i in (IP_LIST.txt) do (
 			echo %%i >> bloqueada.txt
 			) else ( 
 
-			:: Verify if the Bginfo it is instaled
-			:: C:\WINDOWS\gti_heaa\BGInfo_HEAA < This is the default path instalation on remote station
-			if not exist "\\%%i\admin$\gti_heaa\BGInfo_HEAA\bginfo.exe" ( 
-
-			:: Installing ...
-			robocopy d:\gti\bginfo\gti_heaa \\%%i\admin$\gti_heaa /S /R:0 /W:2
-			robocopy D:\gti\bginfo\gti_heaa\BGInfo_HEAA "\\%%i\c$\ProgramData\microsoft\Windows\Start Menu\Programs\StartUp" bginfo.exe-atalho.lnk /R:0 /W:2
-			ECHO Address %%i - Success!.
-			echo %%i >> instalado.txt
-			) else ( 
-			echo %%i - has already been installed 
-			echo %%i >> instalado.txt
-
-		) 
-		)
-	)
-)
+			:: SHUTDOWN !
+           		 psexec.exe \\%%i -s -u gti -p 6feira*13 shutdown -s -t 00
+			echo %%i >> desligado.txt)))
