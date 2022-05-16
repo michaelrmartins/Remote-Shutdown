@@ -10,6 +10,7 @@ echo ----- Iniciado >>log.txt
 echo .              >>log.txt
 setlocal enabledelayedexpansion
 for /F %%i in (IP_LIST.txt) do (
+	
 	:: Verify if the Station it is online
 	ping -n 1 %%i | find "TTL=128" >nul
 	IF !ERRORLEVEL! == 1 (
