@@ -1,24 +1,8 @@
------ Iniciado 
-.              
-Micro 192.168.0.4 Online
-Micro 192.168.0.4 sem acesso
------ Iniciado 
-.              
-Micro 192.168.0.4 Online
-Micro 192.168.0.4 sem acesso
------ Iniciado 
-.              
-Micro 192.168.0.4 Online
-Micro 192.168.0.4 sem acesso
------ Iniciado 
-.              
-Micro 192.168.0.4 Online
-Micro 192.168.0.4 sem acesso
------ Iniciado 
-.              
-Micro 192.168.0.4 Online
-Micro 192.168.0.4 sem acesso
------ Iniciado 
-.              
-Micro 192.168.0.4 Online
-Micro 192.168.0.4 sem acesso
+----- Iniciado ----
+16/05/2022 - 22:10:46
+Micro 192.168.0.159 Offline
+- - - - - - Fim - - - - - -
+----- Iniciado ---- 16/05/2022 - 22:11:36 
+- 
+Micro 192.168.0.159 Offline
+- - - - - - Fim - - - - - -
